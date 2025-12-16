@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d1fa74c4-8fac-47c6-a4b7-86d7658f9782" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/StuOrgApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/StudentBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/SortService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/ValidationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/input/ConsoleInputStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/input/FileInputStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/input/InputStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/input/RandomInputStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/sorting/GradeSortStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/sorting/GroupSortStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/sorting/RecordBookSortStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/strategy/sorting/SortStrategy.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="36vJ9ei9gpiNPzRE3ivqpD08GqS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\17058\Student-organizer" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1fa74c4-8fac-47c6-a4b7-86d7658f9782" name="Changes" comment="" />
+      <created>1765880965420</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765880965420</updated>
+    </task>
+    <servers />
+  </component>
+</project>
