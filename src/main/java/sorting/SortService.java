@@ -1,4 +1,4 @@
-package service;
+package sorting;
 
 public class SortService {
 }

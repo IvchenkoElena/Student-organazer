@@ -1,4 +1,4 @@
-package strategy.input;
+package input;
 
 public interface InputStrategy {
 }
