@@ -45,7 +45,7 @@ java -cp out Main
 - input/ — ввод данных;
 - sorting/ — сортировка;
 - validation/ - влидация входящих данных;
-- StuOrgApp.java — UI;
+- StuOrgApp.java — приложение для сортировки студентов;
 - Main.java — точка входа.
 
 ## Контакты
