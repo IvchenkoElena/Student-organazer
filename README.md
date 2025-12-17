@@ -18,9 +18,9 @@ javac -d out src/main/java/**/*.java
 java -cp out Main
 
 В меню выберите:
-1 — ввести данные (источник: 1‑консоль, 2‑файл, 3‑случайные);
-2 — сортировка;
-0 — выход.
+- 1 — ввести данные (источник: 1‑консоль, 2‑файл, 3‑случайные);
+- 2 — сортировка;
+- 0 — выход.
 
 ## Формат input.csv
 
@@ -49,6 +49,5 @@ java -cp out Main
 - Main.java — точка входа.
 
 ## Контакты
-TeamLead: [Elena]
-
-Email: [pesok_72@mail.ru]
+- TeamLead: [Elena]
+- Email: [pesok_72@mail.ru]
