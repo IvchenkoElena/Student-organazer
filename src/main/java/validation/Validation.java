@@ -11,16 +11,16 @@ public class Validation {
     private static final int FIRST_UPPER_SYMBOL_UNICODE = 65;
     private static final int LAST_UPPER_SYMBOL_UNICODE = 90;
 
-    public boolean isValidInputData(int groupNumber, double averageGrade, String recordBookNumber){
+    public static boolean isValidInputData(int groupNumber, double averageGrade, String recordBookNumber){
         return  isValidGroupNumber(groupNumber) && isValidAverageGrade(averageGrade) && isValidRecordBookNumber(recordBookNumber);
     }
-    private boolean isValidGroupNumber(int groupNumber){
+    private static boolean isValidGroupNumber(int groupNumber){
         return groupNumber >= MIN_GROUP_NUMBER && groupNumber <= MAX_GROUP_NUMBER;
     }
-    private boolean isValidAverageGrade(double averageGrade){
+    private static boolean isValidAverageGrade(double averageGrade){
         return averageGrade >= MIN_AVERAGE_GRADE && averageGrade <= MAX_AVERAGE_GRADE;
     }
-    private boolean isValidRecordBookNumber(String recordBookNumber){
+    private static boolean isValidRecordBookNumber(String recordBookNumber){
         if(recordBookNumber == null || recordBookNumber.isEmpty()){
             return false;
         }
