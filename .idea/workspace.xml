@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1fa74c4-8fac-47c6-a4b7-86d7658f9782" name="Changes" comment="Добавлены стратегии ввода данных в приложение">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sorting/SortRange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/sorting/SortType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sorting/SortService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sorting/SortService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StuOrgApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StuOrgApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="StuOrgApp-dev" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,6 +39,7 @@
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="36vJ9ei9gpiNPzRE3ivqpD08GqS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -54,7 +47,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
-    "JUnit.TestApp.testSort.executor": "Debug",
+    "JUnit.TestApp.testSort.executor": "Run",
     "Maven.Student-organizer [clean].executor": "Run",
     "Maven.Student-organizer [package].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -77,7 +70,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestApp.testSort">
+  <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Student-organizer" />
@@ -201,16 +194,5 @@
     <MESSAGE value="Поправлен README.md файл" />
     <MESSAGE value="Добавлены стратегии ввода данных в приложение" />
     <option name="LAST_COMMIT_MESSAGE" value="Добавлены стратегии ввода данных в приложение" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/TestApp.java</url>
-          <line>60</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
