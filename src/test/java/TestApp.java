@@ -2,6 +2,7 @@ import model.Student;
 import model.StudentBuilder;
 import org.junit.jupiter.api.Test;
 import sorting.SortService;
+import sorting.SortType;
 import validation.Validation;
 
 import java.awt.*;
@@ -59,5 +60,8 @@ public class TestApp {
         var list = Arrays.asList(student, student2, student3, student4, student5, student6);
         SortService.sort(list);
         assertEquals(list.getFirst(), student6);
+        list = Arrays.asList(student, student2, student3, student4, student5, student6);
+        SortService.sort(list, SortType.INCREDIBLE);
+        assertEquals(list.getLast(), student6);
     }
 }
