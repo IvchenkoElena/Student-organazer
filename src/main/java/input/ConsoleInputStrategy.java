@@ -20,7 +20,7 @@ public class ConsoleInputStrategy implements InputStrategy {
             double averageGrade = scanner.nextDouble();
             String recordBookNumber = scanner.next();
 
-            if (Validation.isValidStudent(groupNumber, averageGrade, recordBookNumber)) {
+            if (Validation.isValidInputData(groupNumber, averageGrade, recordBookNumber)) {
                 Student student = new StudentBuilder()
                         .setGroupNumber(groupNumber)
                         .setAverageGrade(averageGrade)

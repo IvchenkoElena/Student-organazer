@@ -26,7 +26,7 @@ public class FileInputStrategy implements InputStrategy {
                 double averageGrade = Double.valueOf(parts[1]);
                 String recordBookNumber = parts[2];
 
-                if (Validation.isValidStudent(groupNumber, averageGrade, recordBookNumber)) {
+                if (Validation.isValidInputData(groupNumber, averageGrade, recordBookNumber)) {
                     Student student = new StudentBuilder()
                             .setGroupNumber(groupNumber)
                             .setAverageGrade(averageGrade)

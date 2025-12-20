@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1fa74c4-8fac-47c6-a4b7-86d7658f9782" name="Changes" comment="Поправлен README.md файл">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/ConsoleInputStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/ConsoleInputStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/FileInputStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/FileInputStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/InputStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/InputStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/RandomInputStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/RandomInputStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/validation/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/validation/Validation.java" afterDir="false" />
-    </list>
+    <list default="true" id="d1fa74c4-8fac-47c6-a4b7-86d7658f9782" name="Changes" comment="Добавлены стратегии ввода данных в приложение" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +17,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="master" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -123,7 +117,15 @@
       <option name="project" value="LOCAL" />
       <updated>1765998939933</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Добавлены стратегии ввода данных в приложение">
+      <option name="closed" value="true" />
+      <created>1766215542178</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1766215542178</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -154,6 +156,7 @@
     <MESSAGE value="Поправлена структура приложения" />
     <MESSAGE value="Поправлена README.md файл" />
     <MESSAGE value="Поправлен README.md файл" />
-    <option name="LAST_COMMIT_MESSAGE" value="Поправлен README.md файл" />
+    <MESSAGE value="Добавлены стратегии ввода данных в приложение" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлены стратегии ввода данных в приложение" />
   </component>
 </project>

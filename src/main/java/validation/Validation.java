@@ -2,7 +2,7 @@ package validation;
 
 public class Validation {
 
-    public static boolean isValidStudent(int groupNumber, double averageGrade, String recordBookNumber) {
+    public static boolean isValidInputData(int groupNumber, double averageGrade, String recordBookNumber) {
         return true;
     }
 }
