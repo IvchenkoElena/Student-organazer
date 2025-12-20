@@ -3,16 +3,30 @@ package model;
 public final class Student
 {
 
-    private final String groupNumber;
+    private final int groupNumber;
     private final double averageGrade;
     private final String recordBookNumber;
 
-    //Конструктор принимает Builder
-    public Student(StudentBuilder studentBuilder)
+    Student(int groupNumber, double averageGrade, String recordBookNumber)
     {
-        this.groupNumber = studentBuilder.getGroupNumber();
-        this.averageGrade = studentBuilder.getAverageGrade();
-        this.recordBookNumber = studentBuilder.getRecordBookNumber();
+        this.groupNumber = groupNumber;
+        this.averageGrade = averageGrade;
+        this.recordBookNumber = recordBookNumber;
+    }
+
+    public int getGroupNumber()
+    {
+        return groupNumber;
+    }
+
+    public double getAverageGrade()
+    {
+        return averageGrade;
+    }
+
+    public String getRecordBookNumber()
+    {
+        return recordBookNumber;
     }
 
     @Override

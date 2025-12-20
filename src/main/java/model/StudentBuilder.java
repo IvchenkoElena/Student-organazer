@@ -1,48 +1,28 @@
 package model;
 
-public class StudentBuilder
-{
-    private String groupNumber;
+public class StudentBuilder {
+    private int groupNumber;
     private double averageGrade;
     private String recordBookNumber;
 
     //Сеттеры
-    public StudentBuilder setGroupNumber(String groupNumber)
-    {
+    public StudentBuilder setGroupNumber(int groupNumber) {
         this.groupNumber = groupNumber;
         return this;
     }
 
-    public StudentBuilder setAverageGrade(double averageGrade)
-    {
+    public StudentBuilder setAverageGrade(double averageGrade) {
         this.averageGrade = averageGrade;
         return this;
     }
 
-    public StudentBuilder setRecordBookNumber(String recordBookNumber)
-    {
+    public StudentBuilder setRecordBookNumber(String recordBookNumber) {
         this.recordBookNumber = recordBookNumber;
         return this;
     }
 
-    public Student build()
-    {
-        return new Student(this);
-    }
-
-    //Геттеры
-    public String getGroupNumber()
-    {
-        return groupNumber;
-    }
-
-    public double getAverageGrade()
-    {
-        return averageGrade;
-    }
-
-    public String getRecordBookNumber()
-    {
-        return recordBookNumber;
+    public model.Student build() {
+        return new Student(groupNumber, averageGrade, recordBookNumber);
     }
 }
+
