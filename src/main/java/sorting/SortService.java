@@ -2,9 +2,7 @@ package sorting;
 
 import model.Student;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.List;
+import java.util.*;
 
 public class SortService {
     public static void sort(List<Student> students) {
@@ -15,7 +13,8 @@ public class SortService {
         if (students == null || students.size() <= 1) {
             return;
         }
-        Student[] studentsArray = students.toArray(new Student[0]);
+        HashSet<Integer> freezeInexes = getIndexesOfUnsortedElements(students, sortType);
+        Student[] studentsArray = listToArray(students, freezeInexes);
         // Создаем стек для хранения границ подмассивов, которые нужно отсортировать
         // Нужен для избегания рекурсии
         Deque<SortRange> stack = new ArrayDeque<>();
@@ -75,9 +74,51 @@ public class SortService {
             }
         }
 
-        // Заменяем элементы в исходном списке отсортированными
+        refillingSortedList(students, studentsArray, freezeInexes);
+    }
+
+    private static Student[] listToArray(List<Student> students, HashSet<Integer> freezeIndexes) {
+        var result = new Student[students.size() - freezeIndexes.size()];
+        var shift = 0;
+        for (var i = 0; i < students.size(); i++) {
+            if (freezeIndexes.contains(i)) {
+                shift++;
+            }
+            else {
+                result[i - shift] = students.get(i);
+            }
+        }
+        return result;
+    }
+
+    private static HashSet<Integer> getIndexesOfUnsortedElements(List<Student> students, SortType sortType) {
+        var result = new HashSet<Integer>();
+        if (sortType == SortType.DEFAULT)
+            return result;
+
+        var index = -1;
+        for (var student: students) {
+            index++;
+            if (student.getGroupNumber() % 2 != 0) {
+                result.add(index);
+            }
+        }
+        return result;
+    }
+
+    private static void refillingSortedList(
+            List<Student> target,
+            Student[] studentsArray,
+            HashSet<Integer> freezeIndexes
+    ) {
+        var shift = 0;
         for (int i = 0; i < studentsArray.length; i++) {
-            students.set(i, studentsArray[i]);
+            if (freezeIndexes.contains(shift + i)) {
+                shift++;
+            }
+            else {
+                target.set(i + shift, studentsArray[i]);
+            }
         }
     }
 
