@@ -11,7 +11,6 @@ import java.util.Scanner;
 public class StuOrgApp {
     private final Scanner scanner = new Scanner(System.in);
     private List<Student> students = new ArrayList<>();
-//    private final SortProcessor sortProcessor = new SortProcessor();
 
 
     public void run() {
@@ -79,7 +78,7 @@ public class StuOrgApp {
             System.out.println(student);
         }
 
-//        sortProcessor.sortStudents(students);
+        SortService.sort(students);
 
         System.out.println("Отсортированные данные:");
         for (Student student : students) {
