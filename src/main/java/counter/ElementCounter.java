@@ -22,7 +22,7 @@ public class ElementCounter {
                     if (list.get(j) == N) {
                         localCount++;
                     }
-                }
+                 }
                 totalCount.addAndGet(localCount);
             });
         }

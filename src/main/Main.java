@@ -12,7 +12,7 @@ public class Main
                 List<Integer> numbers = Arrays.asList
                         (
                         1, 2, 3, 4, 2, 5, 2, 6, 7, 2, 8, 2, 9
-                );
+                 );
 
                 ElementCounter.countOccurrences(numbers, 2, 3);
             }
