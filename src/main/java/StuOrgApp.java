@@ -3,9 +3,11 @@ import input.FileInputStrategy;
 import input.InputStrategy;
 import input.RandomInputStrategy;
 import model.Student;
+import output.OutputFileAppender;
 import sorting.SortService;
 import sorting.SortType;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -102,6 +104,13 @@ public class StuOrgApp {
             System.out.println("\nЗапись " + i);
             System.out.println(student);
             i++;
+        }
+
+        try {
+            OutputFileAppender.appendStudents(students);
+            System.out.println("Данные добавлены в файл");
+        } catch (IOException e) {
+            System.out.println("Ошибка записи в файл");
         }
     }
 }
