@@ -21,7 +21,7 @@ public class ElementCounter {
                 for (int j = start; j < end; j++) {
                     if (list.get(j) == N) {
                         localCount++;
-                    }
+                     }
                  }
                 totalCount.addAndGet(localCount);
             });
