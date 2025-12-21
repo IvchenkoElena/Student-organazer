@@ -13,8 +13,8 @@ public class SortService {
         if (students == null || students.size() <= 1) {
             return;
         }
-        HashSet<Integer> freezeInexes = getIndexesOfUnsortedElements(students, sortType);
-        Student[] studentsArray = listToArray(students, freezeInexes);
+        HashSet<Integer> freezeIndexes = getIndexesOfUnsortedElements(students, sortType);
+        Student[] studentsArray = listToArray(students, freezeIndexes);
         // Создаем стек для хранения границ подмассивов, которые нужно отсортировать
         // Нужен для избегания рекурсии
         Deque<SortRange> stack = new ArrayDeque<>();
@@ -74,7 +74,7 @@ public class SortService {
             }
         }
 
-        refillingSortedList(students, studentsArray, freezeInexes);
+        refillingSortedList(students, studentsArray, freezeIndexes);
     }
 
     private static Student[] listToArray(List<Student> students, HashSet<Integer> freezeIndexes) {

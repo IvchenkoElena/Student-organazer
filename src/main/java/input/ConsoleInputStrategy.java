@@ -17,7 +17,7 @@ public class ConsoleInputStrategy implements InputStrategy {
         for (int i = 0; i < count; i++) {
             System.out.printf("Запись %d. Группа, балл, зачётка: ", i + 1);
             int groupNumber = scanner.nextInt();
-            double averageGrade = scanner.nextDouble();
+            double averageGrade = Double.parseDouble(scanner.next());
             String recordBookNumber = scanner.next();
 
             if (Validation.isValidInputData(groupNumber, averageGrade, recordBookNumber)) {

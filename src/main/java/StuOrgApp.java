@@ -4,6 +4,7 @@ import input.InputStrategy;
 import input.RandomInputStrategy;
 import model.Student;
 import sorting.SortService;
+import sorting.SortType;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,7 +42,7 @@ public class StuOrgApp {
     }
 
     private void inputData() {
-        System.out.println("Выберите источник данных:");
+        System.out.println("\nВыберите источник данных:");
         System.out.println("1. Консоль");
         System.out.println("2. Файл input.csv");
         System.out.println("3. Случайные данные");
@@ -49,7 +50,7 @@ public class StuOrgApp {
 
 
         int source = scanner.nextInt();
-        System.out.print("Количество записей: ");
+        System.out.print("\nКоличество записей: ");
         int count = scanner.nextInt();
 
 
@@ -66,6 +67,14 @@ public class StuOrgApp {
 
         students = strategy.read(count);
         System.out.printf("Загружено %d записей.\n", students.size());
+
+        System.out.println("\nИсходные данные:");
+        int i = 1;
+        for (Student student : students) {
+            System.out.println("\nЗапись " + i);
+            System.out.println(student);
+            i++;
+        }
     }
 
     private void sortAndDisplay() {
@@ -74,16 +83,25 @@ public class StuOrgApp {
             return;
         }
 
-        System.out.println("\nИсходные данные:");
-        for (Student student : students) {
-            System.out.println(student);
+        System.out.println("\nВыбеите способ сортировки данных:");
+        System.out.println("1. Обычная");
+        System.out.println("2. Необычная");
+        System.out.print("Ваш выбор: ");
+
+        int sortType = scanner.nextInt();
+
+        switch (sortType) {
+            case 1 -> SortService.sort(students);
+            case 2 -> SortService.sort(students, SortType.INCREDIBLE);
+            default -> System.out.println("Неверный выбор. Попробуйте снова.");
         }
 
-        SortService.sort(students);
-
-        System.out.println("Отсортированные данные:");
+        System.out.println("\nОтсортированные данные:");
+        int i = 1;
         for (Student student : students) {
+            System.out.println("\nЗапись " + i);
             System.out.println(student);
+            i++;
         }
     }
 }
