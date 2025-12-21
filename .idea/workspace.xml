@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1fa74c4-8fac-47c6-a4b7-86d7658f9782" name="Changes" comment="Добавлены стратегии ввода данных в приложение">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StuOrgApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StuOrgApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +49,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "JUnit.TestApp.executor": "Run",
     "JUnit.TestApp.testSort.executor": "Run",
     "Maven.Student-organizer [clean].executor": "Run",
     "Maven.Student-organizer [package].executor": "Run",
@@ -194,5 +197,15 @@
     <MESSAGE value="Поправлен README.md файл" />
     <MESSAGE value="Добавлены стратегии ввода данных в приложение" />
     <option name="LAST_COMMIT_MESSAGE" value="Добавлены стратегии ввода данных в приложение" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.InputMismatchException" package="java.util" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
