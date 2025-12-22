@@ -40,6 +40,10 @@ public class CustomSingleList<T> extends AbstractList<T> {
 
     @Override
     public boolean add(T t) {
+        if (t == null){
+            return false;
+        }
+
         Node node = new Node(t);
         size++;
         if (head == null) {
