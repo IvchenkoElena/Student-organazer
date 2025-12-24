@@ -1,3 +1,4 @@
+import counter.ElementCounter;
 import input.ConsoleInputStrategy;
 import input.FileInputStrategy;
 import input.InputStrategy;
@@ -24,6 +25,7 @@ public class StuOrgApp {
         while (true) {
             System.out.println("\n1. Ввести данные");
             System.out.println("2. Отсортировать студентов по всем полям");
+            System.out.println("3. Узнать количество студентов в группе");
             System.out.println("0. Выход");
             System.out.print("Выберите действие: ");
 
@@ -34,6 +36,7 @@ public class StuOrgApp {
             switch (choice) {
                 case 1 -> inputData();
                 case 2 -> sortAndDisplay();
+                case 3 -> countGroupMembers();
                 case 0 -> {
                     System.out.println("До свидания!");
                     return;
@@ -41,6 +44,16 @@ public class StuOrgApp {
                 default -> System.out.println("Неверный выбор. Попробуйте снова.");
             }
         }
+    }
+
+    private void countGroupMembers() {
+        if (students.isEmpty()) {
+            System.out.println("Нет данных для поиска. Введите данные сначала.");
+            return;
+        }
+        System.out.println("\nВведите номер группы:");
+        int groupNumber = scanner.nextInt();
+        ElementCounter.countOccurrences(students, groupNumber);
     }
 
     private void inputData() {
