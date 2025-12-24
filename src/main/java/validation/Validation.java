@@ -1,6 +1,6 @@
 package validation;
 
-public class Validation {
+public final class Validation {
     private static final int MIN_GROUP_NUMBER = 100;
     private static final int MAX_GROUP_NUMBER = 999;
     private static final double MIN_AVERAGE_GRADE = 2.0;
@@ -10,6 +10,9 @@ public class Validation {
     private static final int LENGTH_RECORD_BOOK_NUMBER = 8;
     private static final int FIRST_UPPER_SYMBOL_UNICODE = 65;
     private static final int LAST_UPPER_SYMBOL_UNICODE = 90;
+    private Validation(){
+
+    }
 
     public static boolean isValidInputData(int groupNumber, double averageGrade, String recordBookNumber){
         return  isValidGroupNumber(groupNumber) && isValidAverageGrade(averageGrade) && isValidRecordBookNumber(recordBookNumber);

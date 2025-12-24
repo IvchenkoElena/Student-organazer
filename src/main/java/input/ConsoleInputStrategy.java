@@ -16,8 +16,12 @@ public class ConsoleInputStrategy implements InputStrategy {
         List<Student> students = new ArrayList<>();
         for (int i = 0; i < count; i++) {
             System.out.printf("Запись %d. Группа, балл, зачётка: ", i + 1);
-            int groupNumber = scanner.nextInt();
-            double averageGrade = Double.parseDouble(scanner.next());
+            int groupNumber = 0;
+            double averageGrade = 0;
+
+            if(scanner.hasNextInt()) groupNumber = scanner.nextInt();
+
+            if(scanner.hasNextDouble()) averageGrade = scanner.nextDouble();
             String recordBookNumber = scanner.next();
 
             if (Validation.isValidInputData(groupNumber, averageGrade, recordBookNumber)) {
@@ -31,6 +35,7 @@ public class ConsoleInputStrategy implements InputStrategy {
                 System.out.println("Ошибка: неверные данные. Запись пропущена.");
             }
         }
+        scanner.close();
         return students;
     }
 }
