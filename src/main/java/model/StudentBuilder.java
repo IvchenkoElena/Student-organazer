@@ -21,7 +21,7 @@ public class StudentBuilder {
         return this;
     }
 
-    public model.Student build() {
+    public Student build() {
         return new Student(groupNumber, averageGrade, recordBookNumber);
     }
 }

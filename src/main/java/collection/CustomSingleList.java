@@ -9,14 +9,12 @@ public class CustomSingleList<T> extends AbstractList<T> {
 
     private class Node {
         private Node next;
-        private final T data;
-
+        private T data;
 
         public Node(T data) {
             this.data = data;
 
         }
-
         @Override
         public String toString() {
             return "Node{" +
@@ -61,21 +59,41 @@ public class CustomSingleList<T> extends AbstractList<T> {
 
     @Override
     public T get(int index) {
-        if (index < 0 || index >= size) {
-            throw new IndexOutOfBoundsException("индекс отрицательный или больше размера списка " + index);
-        }
+       checkIndex(index);
         if (head == null) {
             throw new IllegalStateException("Список пуст");
         }
         Node current = head;
-        if (index == 0) {
-            return current.data;
-        }
+
         for (int i = 0; i < index; i++) {
             current = current.next;
         }
         return current.data;
     }
+
+    @Override
+    public T set(int index, T element) {
+       checkIndex(index);
+       if (element == null) throw new IllegalStateException("нету ссылки на элемент");
+
+       Node current = head;
+
+        for (int i = 0; i < index; i++) {
+            current = current.next;
+        }
+        T old = current.data;
+        current.data = element;
+        return old;
+
+    }
+
+    private void checkIndex(int index){
+        if (index < 0 || index >= size) {
+            throw new IndexOutOfBoundsException("индекс отрицательный или больше размера списка " + index);
+        }
+    }
+
+
 
     @Override
     public boolean equals(Object o) {
@@ -96,6 +114,4 @@ public class CustomSingleList<T> extends AbstractList<T> {
                 ", size=" + size +
                 '}';
     }
-
-
 }

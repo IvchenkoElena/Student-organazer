@@ -38,6 +38,7 @@ public class StuOrgApp {
                 case 2 -> sortAndDisplay();
                 case 3 -> countGroupMembers();
                 case 0 -> {
+                    scanner.close();
                     System.out.println("До свидания!");
                     return;
                 }

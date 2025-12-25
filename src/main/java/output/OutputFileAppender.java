@@ -10,6 +10,9 @@ import java.util.List;
 
 public final class OutputFileAppender {
     private static final String OUTPUT_FILE = "output.csv";
+    private OutputFileAppender(){
+
+    }
 
     public static void appendStudents(List<Student> students) throws IOException {
         StringBuilder sb = new StringBuilder();
