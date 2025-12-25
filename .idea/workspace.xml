@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d1fa74c4-8fac-47c6-a4b7-86d7658f9782" name="Changes" comment="Добавлена функция выбора вида сортировки">
-      <change afterPath="$PROJECT_DIR$/output.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/output/OutputFileAppender.java" afterDir="false" />
+    <list default="true" id="d1fa74c4-8fac-47c6-a4b7-86d7658f9782" name="Changes" comment="Кастомная коллекция добавлена в APP, причтении входных данных из файла добавлено заполнение кастомной коллекции через стрим">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input.csv" beforeDir="false" afterPath="$PROJECT_DIR$/input.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StuOrgApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StuOrgApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/ConsoleInputStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/ConsoleInputStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/input/RandomInputStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/input/RandomInputStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sorting/SortService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sorting/SortService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="collection" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,6 +48,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main1.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.TestApp.executor&quot;: &quot;Run&quot;,
     &quot;JUnit.TestApp.testSort.executor&quot;: &quot;Run&quot;,
     &quot;Maven.Student-organizer [clean].executor&quot;: &quot;Run&quot;,
@@ -66,7 +61,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.Issue.Navigation&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -78,7 +73,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.java in Student-organizer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Student-organizer" />
@@ -102,8 +97,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="java in Student-organizer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Student-organizer" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.java in Student-organizer" />
+        <item itemvalue="JUnit.TestApp.testSort" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.TestApp.testSort" />
       </list>
@@ -177,7 +183,31 @@
       <option name="project" value="LOCAL" />
       <updated>1766312630079</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Дополнительное задание 2. Запись output в файл коллекции студентов">
+      <option name="closed" value="true" />
+      <created>1766335863159</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1766335863159</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Fix удалены ошибочно закомиченные файлы">
+      <option name="closed" value="true" />
+      <created>1766409129392</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1766409129392</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Кастомная коллекция добавлена в APP, причтении входных данных из файла добавлено заполнение кастомной коллекции через стрим">
+      <option name="closed" value="true" />
+      <created>1766661054698</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1766661054698</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,7 +240,11 @@
     <MESSAGE value="Поправлен README.md файл" />
     <MESSAGE value="Добавлены стратегии ввода данных в приложение" />
     <MESSAGE value="Добавлена функция выбора вида сортировки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена функция выбора вида сортировки" />
+    <MESSAGE value="Дополнительное задание 2. Запись output в файл коллекции студентов" />
+    <MESSAGE value="Fix удалены ошибочно закомиченные файлы" />
+    <MESSAGE value="Метод адаптирован для работы со списком студентов по полю НомерГруппы, функциональность добавлена в APP" />
+    <MESSAGE value="Кастомная коллекция добавлена в APP, причтении входных данных из файла добавлено заполнение кастомной коллекции через стрим" />
+    <option name="LAST_COMMIT_MESSAGE" value="Кастомная коллекция добавлена в APP, причтении входных данных из файла добавлено заполнение кастомной коллекции через стрим" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
