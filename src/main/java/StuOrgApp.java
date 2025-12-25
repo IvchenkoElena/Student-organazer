@@ -35,6 +35,7 @@ public class StuOrgApp {
                 case 1 -> inputData();
                 case 2 -> sortAndDisplay();
                 case 0 -> {
+                    scanner.close();
                     System.out.println("До свидания!");
                     return;
                 }

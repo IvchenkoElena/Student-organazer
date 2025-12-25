@@ -1,48 +1,64 @@
 package input;
 
+import collection.CustomSingleList;
 import model.Student;
 import model.StudentBuilder;
 import validation.Validation;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.ArrayList;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class FileInputStrategy implements InputStrategy {
     private static final String INPUT_FILE = "input.csv";
+    private static List<Student> students = new CustomSingleList<>();
 
     @Override
     public List<Student> read(int count) {
-        List<Student> students = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(INPUT_FILE))) {
-            int linesRead = 0;
-            String line;
-            while ((line = reader.readLine()) != null && linesRead < count) {
-                String[] parts = line.split(",");
-                if (parts.length != 3) continue;
 
-                int groupNumber = Integer.valueOf(parts[0]);
-                double averageGrade = Double.valueOf(parts[1]);
-                String recordBookNumber = parts[2];
-
-                if (Validation.isValidInputData(groupNumber, averageGrade, recordBookNumber)) {
-                    Student student = new StudentBuilder()
-                            .setGroupNumber(groupNumber)
-                            .setAverageGrade(averageGrade)
-                            .setRecordBookNumber(recordBookNumber)
-                            .build();
-                    students.add(student);
-                } else {
-                    System.out.println("Ошибка: неверные данные. Запись пропущена.");
-                }
-                linesRead++;
-            }
-
+        try (Stream<String> linesStream = Files.lines(Paths.get(INPUT_FILE))) {
+            students = linesStream.limit(count)
+                    .map(this::fromLineToStudent)
+                    .collect(Collectors.toCollection(CustomSingleList::new));
         } catch (Exception e) {
             System.out.println("Ошибка чтения файла: " + e.getMessage());
         }
 
         return students;
+    }
+
+    private Student fromLineToStudent(String line) {
+        String[] parts = line.split(",");
+        if (parts.length != 3) {
+            System.out.println("Ошибка: неверные данные. Строка пропущена.");
+        }
+        int groupNumber = Integer.valueOf(parts[0]);
+        double averageGrade = Double.valueOf(parts[1]);
+        String recordBookNumber = parts[2];
+
+        Optional<Student> mayBeStudent = createStudent(groupNumber, averageGrade, recordBookNumber);
+
+        if (mayBeStudent.isEmpty()) {
+            System.out.println("Нет студента");
+
+        }
+        return mayBeStudent.get();
+    }
+
+    private Optional<Student> createStudent(int groupNumber, double averageGrade, String recordBookNumber) {
+        if (Validation.isValidInputData(groupNumber, averageGrade, recordBookNumber)) {
+            Student student = new StudentBuilder()
+                    .setGroupNumber(groupNumber)
+                    .setAverageGrade(averageGrade)
+                    .setRecordBookNumber(recordBookNumber)
+                    .build();
+            return Optional.of(student);
+        } else {
+            System.out.println("Ошибка: неверные данные. Запись пропущена.");
+            return Optional.empty();
+        }
     }
 }
