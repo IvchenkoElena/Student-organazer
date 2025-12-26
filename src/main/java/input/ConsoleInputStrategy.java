@@ -38,7 +38,7 @@ public class ConsoleInputStrategy implements InputStrategy {
                     .build();
             students.add(student);
         } else {
-            System.out.println("Ошибка: неверные данные. Запись пропущена.");
+            System.out.print("Ошибка: неверные данные. Запись пропущена.\n");
         }
     }
 }
