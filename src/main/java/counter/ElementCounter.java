@@ -62,6 +62,6 @@ public class ElementCounter {
             }
         }
 
-        System.out.println("Количество студентов группы " + groupNumber + " : " + totalCount.get());
+        System.out.print("Количество студентов группы " + groupNumber + ": " + totalCount.get() + "\n");
     }
 }
