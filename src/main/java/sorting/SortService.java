@@ -112,12 +112,12 @@ public class SortService {
             HashSet<Integer> freezeIndexes
     ) {
         var shift = 0;
-        for (int i = 0; i < studentsArray.length; i++) {
-            if (freezeIndexes.contains(shift + i)) {
+        for (int i = 0; i < target.size(); i++) {
+            if (freezeIndexes.contains(i)) {
                 shift++;
             }
             else {
-                target.set(i + shift, studentsArray[i]);
+                target.set(i, studentsArray[i - shift]);
             }
         }
     }
